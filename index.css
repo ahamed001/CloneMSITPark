@@ -219,22 +219,6 @@ span{
     color: white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .webpage2{
     background-color: white;
     width: 90%;
@@ -388,13 +372,134 @@ span{
     animation: slideInLeft 1.5s ease-in-out;
 }
 
+
 @media screen and (min-width: 300px) and (max-width: 1000px) {
     
     body{
         text-align: center;
     }
+
+    .Logo-container{
+        margin: 0 28%;
+    }
     
-    .webpage{
+    .Logo{
+        width: 120px;
+    }
+
+    .top-header>h1{
+        margin: 3% 0;
+        padding: 0 20px;
+        font-size: 20px;
+    }
+    
+    .top-header>p{
+        border: solid 2px #ccc;
+        width: auto;
+        padding: 5px 20px;
+        font-size: 15px;
+    }
+
+    .Hero-container{
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    .contact{
+        display: none;
+    }
+
+    .Hero{
+        width: 60%;
+        margin: auto;
+    }
+
+    .Hero-content>p{
+        font-size: 12px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .btn{
+        width: 100px;
+        margin: 20px auto;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials{
+        background-color: aliceblue;
+        font-size: 30px;
+        font-weight: 600;
+        display: block;
+    }
+    
+    .Experience-Testimonial{
+        width: 200px;
+        text-align: center;
+        margin: 50px auto;
+    }
+
+    .Clients-Testimonial{
+        width: 150px;
+        text-align: center;
+        margin: 50px auto;
+    }
+
+    .Projects-Testimonial{
+        width:100px;
+        text-align: center;
+        margin: 50px auto;
+    }
+
+    .why h1{
+        font-size: 15px;
+        padding: 20px 0 0 0;
+    }
+
+    .business-dev{
+        font-size: 18px;
+        font-weight: 400;
+        padding: 20px 5px;
+        text-align: left;
+    }
+
+    .conts{
+        padding: 10px;
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .choose1 ul, .choose2 ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin: 20px;
+    }
+
+    .choose1 ul li, .choose2 ul li {
+        background: skyblue;
+        color: white;
+        border: solid 2px skyblue;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: 10px;
+    }
+
+    .choose1 ul li:nth-child(odd),
+    .choose2 ul li:nth-child(odd) {
+        background: white;
+        color: black;
+    }
+
+    .grid-Img{
+        width: 80%;
+    }
+
+    .webpage2{
         width: 95%;
         margin: 10px auto;
         padding: 5px 10px;
