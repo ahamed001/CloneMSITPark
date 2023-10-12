@@ -5,7 +5,8 @@ html{
 
 .webpage{
     background-color: white;
-    margin: 40px;
+    width: 90%;
+    margin: 40px auto;
     padding: 20px;
     border-radius: 35px;
 }
@@ -26,7 +27,8 @@ html{
 .Expertise{
     background-color: aliceblue;
     padding: 40px;
-    margin: 40px;
+    width: 85%;
+    margin: 40px auto;
     border-radius: 30px;
     display: flex;
 }
@@ -45,7 +47,8 @@ html{
 .Cost{
     background-color: aliceblue;
     padding: 40px;
-    margin: 40px;
+    width: 85%;
+    margin: 40px auto;
     border-radius: 30px;
     display: flex;
 }
@@ -64,7 +67,8 @@ html{
 .Time{
     background-color: aliceblue;
     padding: 40px;
-    margin: 40px;
+    width: 85%;
+    margin: 40px auto;
     border-radius: 30px;
     display: flex;
 }
@@ -83,7 +87,8 @@ html{
 .Maintenance{
     background-color: aliceblue;
     padding: 40px;
-    margin: 40px;
+    width: 85%;
+    margin: 40px auto;
     border-radius: 30px;
     display: flex;
 }
@@ -104,6 +109,10 @@ html{
     padding: 0 150px;
     margin: 4% 0 6% 0;
     font-size: 22px;
+}
+
+.Img-Top{
+    display: none;
 }
 
 @keyframes slideInRight {
@@ -145,4 +154,175 @@ html{
 .Cost, 
 .Maintenance {
     animation: slideInLeft 1.5s ease-in-out;
+}
+
+@media screen and (min-width: 300px) and (max-width: 1000px) {
+    
+    body{
+        text-align: center;
+    }
+    
+    .webpage{
+        width: 95%;
+        margin: 10px auto;
+        padding: 5px 10px;
+        border-radius: 25px;
+    }
+    
+    .Header{
+        padding: 10px;
+        font-size: 10px;
+    }
+    
+    .Header>p{
+        padding: 10px;
+        margin: 0;
+        font-size: 10px;
+    }
+    
+    .Expertise{
+        display: block;
+        padding: 20px 0;
+    }
+
+    .Expertise>div>h1{
+        font-size: 15px;
+        padding: 0;
+        margin: 10px auto ;
+    }
+    
+    .Expertise>div>p{
+        font-size: 10px;
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    .Cost{
+        display: block;
+        padding: 20px 0;
+    }
+
+    .Cost>div>h1{
+        font-size: 15px;
+        padding: 0;
+        margin: 10px auto ;
+    }
+    
+    .Cost>div>p{
+        font-size: 10px;
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    .Time{
+        display: block;
+        padding: 20px 0;
+    }
+
+    .Time>div>h1{
+        font-size: 15px;
+        padding: 0;
+        margin: 10px auto ;
+    }
+    
+    .Time>div>p{
+        font-size: 10px;
+        margin: 0;
+        padding: 0 20px;
+    }
+    
+    .Maintenance{
+        display: block;
+        padding: 20px 0;
+    }
+
+    .Maintenance>div>h1{
+        font-size: 15px;
+        padding: 0;
+        margin: 10px auto ;
+    }
+    
+    .Maintenance>div>p{
+        font-size: 10px;
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    .Img{
+        width: 80%;
+    }
+
+    .Img-Top{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .Img-Bottom{
+        display: none;
+    }
+
+    .Footer{
+        padding: 0 10px;
+        margin: 0;
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1250px) {
+
+    .Header{
+        padding: 0px 20px;
+        font-size: 20px;
+    }
+    
+    .Header>p{
+        padding: 10px 40px;
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .Expertise>div>h1{
+        margin: 20px 0 0 20px;
+    }
+
+    .Expertise>div>p{
+        margin: 0;
+        padding: 20px 0 0 20px;
+    }
+
+    .Cost>div>h1{
+        margin: 10px auto ;
+    }
+
+    .Cost>div>p{
+        margin: 0;
+        padding: 0;
+    }
+
+    .Time>div>h1{
+        margin: 50px 0 0 20px ;
+    }
+
+    .Time>div>p{
+        margin: 0;
+        padding: 20px 0 0 20px;
+    }
+
+    .Maintenance>div>h1{
+        margin: 30px auto ;
+    }
+
+    .Maintenance>div>p{
+        margin: 0;
+        padding: 0;
+    }
+
+    .Footer{
+        text-align: center;
+        padding: 0 50px;
+        margin: 0;
+        font-size: 15px;
+    }
+    
 }
