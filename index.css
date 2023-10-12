@@ -1,3 +1,148 @@
 html{
-    font-family: sans-serif;
+    font-family: system-ui;
+    background-color: #191d5a;
+}
+
+.webpage{
+    background-color: white;
+    margin: 40px;
+    padding: 20px;
+    border-radius: 35px;
+}
+
+.Header{
+    margin: 6% 0 0 0;
+    text-align: center;
+    padding: 0 200px;
+    font-size: 22px;
+}
+
+.Header>p{
+    padding: 0 100px;
+    margin: 0 0 6% 0;
+    font-size: 18px;
+}
+
+.Expertise{
+    background-color: aliceblue;
+    padding: 40px;
+    margin: 40px;
+    border-radius: 30px;
+    display: flex;
+}
+
+.Expertise>div>h1{
+    font-size: 42px;
+    margin: 120px 0 0 80px;
+}
+
+.Expertise>div>p{
+    font-size: 18px;
+    margin: 40px 0 0 80px;
+    padding: 0 50px 0 0;
+}
+
+.Cost{
+    background-color: aliceblue;
+    padding: 40px;
+    margin: 40px;
+    border-radius: 30px;
+    display: flex;
+}
+
+.Cost>div>h1{
+    font-size: 42px;
+    margin: 100px 60px 0 20px;
+}
+
+.Cost>div>p{
+    font-size: 18px;
+    margin: 40px 60px 0 20px;
+    padding: 0 50px 0 0;
+}
+
+.Time{
+    background-color: aliceblue;
+    padding: 40px;
+    margin: 40px;
+    border-radius: 30px;
+    display: flex;
+}
+
+.Time>div>h1{
+    font-size: 42px;
+    margin: 120px 0 0 80px;
+}
+
+.Time>div>p{
+    font-size: 18px;
+    margin: 40px 0 0 80px;
+    padding: 0 50px 0 0;
+}
+
+.Maintenance{
+    background-color: aliceblue;
+    padding: 40px;
+    margin: 40px;
+    border-radius: 30px;
+    display: flex;
+}
+
+.Maintenance>div>h1{
+    font-size: 42px;
+    margin: 100px 80px 0 20px;
+}
+
+.Maintenance>div>p{
+    font-size: 18px;
+    margin: 40px 100px 0 20px;
+    padding: 0 50px 0 0;
+}
+
+.Footer{
+    text-align: center;
+    padding: 0 150px;
+    margin: 4% 0 6% 0;
+    font-size: 22px;
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    70% {
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.Expertise, 
+.Time{
+    animation: slideInRight 1.5s ease-in-out;
+}
+
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    70% {
+        transform: translateX(30%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+ 
+.Cost, 
+.Maintenance {
+    animation: slideInLeft 1.5s ease-in-out;
 }
