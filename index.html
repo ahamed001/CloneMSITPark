@@ -118,6 +118,7 @@
                     <li>compatibility with Modern Technologies</li>
                 </ul>
             </div>
+
         </div>
         
     </div>
@@ -201,7 +202,36 @@
                 and experience to enhance your business and stay ahead in the digital landscape
             </p>
         </div>
+
+        <button id="goToTop" class="goTop">&uarr;</button>
     </div>
+
+    <script>
+        
+        window.onload = () => {
+            document.body.classList.add('fade-in');
+        };
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const goToTopButton = document.getElementById('goToTop');
+
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 300) {
+                    goToTopButton.style.display = 'block';
+                } else {
+                    goToTopButton.style.display = 'none';
+                }
+            });
+
+            goToTopButton.addEventListener('click', function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+    </script>
     
 </body>
 </html>

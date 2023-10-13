@@ -3,17 +3,41 @@ html{
     background-color: #191d5a;
 }
 
+body{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    animation: fade-in 0.5s ease-in-out;
+  }
+
 .webpage1{
     background-color: white;
 }
 
 .Logo-container{
-    width: 10%;
+    width: 15%;
     margin: auto;
 }
 
 .Logo{
-    width: 150px;
+    width: 250px;
 }
 
 .top-header>h1{
@@ -47,26 +71,26 @@ html{
     justify-content: center;
 }
 
-.Call{
+.Call {
     background-color: #ffffff;
-    border-radius: 7.5rem;
+    border-radius: 7.5rem 0 0 7.5rem;
     box-shadow: -0.1rem -0.1rem 0.9rem rgba(0, 0, 0, 0.25);
     box-sizing: border-box;
     flex-shrink: 0;
-    padding: 1.3rem 2.8rem;
-    width: 100%;
-    margin: 15px auto;
+    padding: 0.5rem 1.5rem;
+    width: 90%;
+    margin: 15px -5px 15px 0px;
 }
 
-.Whatsapp{
+.Whatsapp {
     background-color: #ffffff;
-    border-radius: 7.5rem;
+    border-radius: 7.5rem 0 0 7.5rem;
     box-shadow: -0.1rem -0.1rem 0.9rem rgba(0, 0, 0, 0.25);
     box-sizing: border-box;
     flex-shrink: 0;
-    padding: 1.3rem 2.8rem;
-    width: 100%;
-    margin: 15px auto;
+    padding: 0.5rem 1.5rem;
+    width: 90%;
+    margin: 15px -5px 15px 0px;
 }
 
 .Hero-content>p{
@@ -372,6 +396,23 @@ span{
     animation: slideInLeft 1.5s ease-in-out;
 }
 
+.goTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: skyblue;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.goTop:hover {
+    background-color: #4494ea;
+}
 
 @media screen and (min-width: 300px) and (max-width: 1000px) {
     
@@ -384,7 +425,7 @@ span{
     }
     
     .Logo{
-        width: 120px;
+        width: 150px;
     }
 
     .top-header>h1{
@@ -450,9 +491,10 @@ span{
     }
 
     .Projects-Testimonial{
-        width:100px;
+        width:150px;
         text-align: center;
-        margin: 50px auto;
+        margin: auto;
+        height: 250px;
     }
 
     .why h1{
@@ -473,20 +515,29 @@ span{
         text-align: left;
     }
 
+    .why{
+        width: 100%;
+        height: 350px;
+        position: relative;
+        background-image: url('./Images/Vector.png');
+        background-size: cover;
+        background-position: center center;
+    }
+
     .choose1 ul, .choose2 ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
-        margin: 20px;
+        margin: 10px;
     }
 
     .choose1 ul li, .choose2 ul li {
         background: skyblue;
         color: white;
         border: solid 2px skyblue;
-        padding: 10px 20px;
+        padding: 5px 10px;
         border-radius: 20px;
-        font-size: 10px;
+        font-size: 7px;
     }
 
     .choose1 ul li:nth-child(odd),
